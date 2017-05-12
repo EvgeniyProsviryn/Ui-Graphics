@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ui page</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<div class="back"></div>
+	
+	<div class="container">
+	    <div class="row">
+	        <div class="col-md-12 col-sm-12 col-xs-12">
+	            <section class="header-panel">
+	                <div class="panel-logo">
+	                    <i class="fa fa-audio-description" aria-hidden="true"></i>
+	                </div>
+	                <ul class="center-menu">
+	                    <li><a href="">Cloud</a></li>
+	                    <li><a href="">Apps</a></li>
+	                    <li><a href="">Stats</a></li>
+	                    <li><a href="">Users</a></li>
+	                </ul>
+	                <ul class="right-menu">
+	                    <li><a href="" class="search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+	                    <li><a href="" class="settings"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+	                    <li><a href="" class="reload"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+	                    <li><a href="" class="logOut"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+	                </ul>
+	            </section>
+                <div class="content-box">
+                    <div class="col-md-7 col-sm-12 col-xs-12 graphs">
+	                <div class="menu-panel">
+	                    <ul class="left-menu">
+	                        <li class="active"><i class="fa fa-pencil" aria-hidden="true"></i><div class="triangle active"></div></li>
+	                        <li><i class="fa fa-user" aria-hidden="true"></i><div class="triangle"></div></li>
+	                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><div class="triangle"></div></li>
+	                        <li><i class="fa fa-calendar" aria-hidden="true"></i><div class="triangle"></div></li>
+	                        <li><i class="fa fa-file-o" aria-hidden="true"></i><div class="triangle"></div></li>
+	                        <li><i class="fa fa-commenting-o" aria-hidden="true"></i><div class="triangle"></div></li>
+	                        <li><i class="fa fa-pie-chart" aria-hidden="true"></i><div class="triangle"></div></li>
+	                    </ul>
+	                </div>
+	                   <span class="ttl">Dashboard</span><br>
+	                   <div class="ChartLabel"><i class="fa fa-power-off" aria-hidden="true"></i>Online</div>
+	                   <canvas id="LineChart" width="400px" height="200px"></canvas>
+	                   <span class="ttl" style="opacity:0;">Dashboard</span><br>
+	                   <div class="ChartLabel"><i class="fa fa-line-chart" aria-hidden="true"></i>Traffic</div>
+	                   <canvas id="LineChart2" width="400px" height="200px"></canvas>
+	               </div>
+	               <div class="col-md-5 col-sm-12 col-xs-12 rm">
+	                   <div class="right-content">
+	                       <div class="stats-line first">
+	                           <i class="fa fa-database" aria-hidden="true"></i>
+	                           <span class="line-title">1.6TB / 2TB</span>
+	                           <div class="line">
+	                               <div class="percent-line"></div>
+	                               <div class="hidden1">50</div>
+	                           </div>
+	                       </div>
+	                       <div class="stats-line second">
+	                           <i class="fa fa-link" aria-hidden="true" style="color:#343f4b"></i>
+	                           <span class="line-title" style="color:#343f4b">12 sales per Hour</span>
+	                           <div class="line">
+	                               <div class="percent-line" style="background-color: #343f4b"></div>
+	                               <div class="hidden2">40</div>
+	                           </div>
+	                       </div>
+	                       <div class="stats-line last">
+	                           <i class="fa fa-users" aria-hidden="true" style="color: #f9745c"></i>
+	                           <span class="line-title" style="color: #f9745c">44,142 / 50,000</span>
+	                           <div class="line">
+	                               <div class="percent-line" style="background-color: #f9745c"></div>
+	                               <div class="hidden3">90</div>
+	                           </div>
+	                       </div>
+	                       <div class="h-line"></div>
+	                       <div class="total-count col-md-12">
+	                           <span class="total-visitors ">21.780</span> <br>
+	                           <span class="total-title">Total visitors</span>
+	                       </div>
+	                       <div class="h-line" style="margin-top: -15px;"></div>
+	                       <div class="total-count col-md-12">
+	                           <span class="total-visitors ">1.780</span> <br>
+	                           <span class="total-title">Mobile visitors</span>
+	                       </div>
+	                       <div class="h-line" style="margin-top: -15px;"></div>
+	                       <div class="author">Programmed@Webproweb</div>
+	                   </div>
+	               </div>
+	           </div>
+            </div>
+        </div>
+    </div>
+                     
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
